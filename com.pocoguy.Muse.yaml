@@ -20,12 +20,11 @@ finish-args:
   - --socket=wayland
   - --socket=pulseaudio
   - --share=network
-  - --persist=.
   - --device=dri
-  - --socket=session-bus
   - --filesystem=xdg-music
   - --filesystem=xdg-run/app/com.discordapp.Discord
   - --filesystem=xdg-run/discord-ipc-0
+  - --own-name=org.mpris.MediaPlayer2.Mixtapes
 modules:
   - name: nodejs-runtime
     buildsystem: simple
